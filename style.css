@@ -1,0 +1,138 @@
+
+@font-face{
+    font-family: "Exo";
+    font-style: normal;
+    font-weight: 400;
+    src:url(./Exo2.0-Thin.otf) ,
+}
+*{
+    font-family: Exo;
+}
+body{
+    background-image: url(pattern.png) ;
+}
+h1{
+    color: #ffff;
+}
+.up{
+    display: flex;
+    justify-content: space-around;
+}
+.allcats{
+    display: flex;
+    justify-content: space-between;
+    width: max-content;
+    
+}
+.cat1{
+    background-color: #F2F2F2;
+    width: 320px;
+    height: 509px;
+    margin: 0 auto;
+    border-radius: 20px;
+   
+
+    clip-path:
+    polygon(
+        0% 10%,     /* верхняя левая */
+        10% 0%,     /* верхняя левая */
+        100% 0%,    /* верхняя правая */
+        100% 5%,   /* верхняя правая */
+        100% 100%,  /* нижняя правая */
+        95% 100%,  /* нижняя правая */
+        5% 100%,   /* нижняя левая */
+        0 100%      /* нижняя левая */
+      );
+    
+    
+   
+
+}
+
+.catphoto{
+position: static;
+top: 30px;
+right: 16px;
+}
+.catphoto img{
+    max-width: 100%;
+
+}
+.catinfo{
+    position: relative;
+    left: 65px;
+    padding: 0 auto;
+}
+
+strong h1{
+    color: black;
+}
+.catsircle {
+    width: 100px; 
+    height: 100px;
+    background: #1698D9;
+    border-radius: 50%;
+    position: relative;
+    bottom: 201px;
+    left: 220px;
+
+}
+
+.catsircle p{
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    left: 26px;
+    top: -37px;
+}
+.catfooter{
+    color:#ffff;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.cat1 {
+    width: 320px;
+    height: 509px;
+    border-radius: 20px;
+    border: 5px solid #55f;
+  
+    clip-path:
+    polygon(
+        0% 10%,     /* верхняя левая */
+        10% 0%,     /* верхняя левая */
+        100% 0%,    /* верхняя правая */
+        100% 5%,   /* верхняя правая */
+        100% 100%,  /* нижняя правая */
+        95% 100%,  /* нижняя правая */
+        5% 100%,   /* нижняя левая */
+        0 100%      /* нижняя левая */
+      );
+}
+.info_text{
+    color: red;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.cat1:hover {
+    border-color: #99f;
+    clip-path:
+    polygon(
+        0% 10%,     /* верхняя левая */
+        10% 0%,     /* верхняя левая */
+        100% 0%,    /* верхняя правая */
+        100% 5%,   /* верхняя правая */
+        100% 100%,  /* нижняя правая */
+        95% 100%,  /* нижняя правая */
+        5% 100%,   /* нижняя левая */
+        0 100%      /* нижняя левая */
+      );
+  }
+  
+
+

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./jq.js"></script>
+
+            
+          
+      
+    <title>CATRULES</title>
+</head>
+
+<body>
+    <div class="up">
+        <h1>Ты покормил сегодня кота ? </h1>
+    </div>
+<div class="allcats">
+
+<div class="colloractive">
+
+<div style="margin-right: 18px;">
+
+
+
+ <div class="cat1" id="cat1">
+   
+        <div class="catinfo">
+            <p style="color: #666666;padding-top: 10px;">Сказачное заморское яство</p>
+            <strong>
+                 <h1 style="margin: 0 auto;">Нямушка</h1>
+                 <h3 style="margin: 0 auto;">с фуа-гра</h3>
+                </strong>
+                 <p style="color: #666666;">10 порций <br>
+                мышь в подарок</p>
+            
+        </div>
+        <div class="catphoto">
+            <img src="./Photo.png">
+            <div class="catsircle " id="catsirlce1">
+                <p>0,5<br>
+                кг</p>
+            </div>
+        </div>
+
+    
+
+</div>
+    
+    <div class="catfooter" id="catf1">
+        <p>Чего сидишь? Порадуй котэ,<a href="#">купи.</a></p>
+</div>
+
+    <div class="info_text" id="info-text1" style="display:none;">
+        <p>Вкусное лакомство для всех кошек !</p>
+    </div>
+
+   
+    </div>
+
+    </div> 
+    
+
+    <div style="margin-right:18px ;">
+
+    <div class="cat1" id="cat2">
+        <div class="catinfo">
+            <p style="color: #666666;padding-top: 10px;">Сказачное заморское яство</p>
+            <strong>
+                 <h1 style="margin: 0 auto;">Нямушка</h1>
+                 <h3 style="margin: 0 auto;">с фуа-гра</h3>
+                </strong>
+                 <p style="color: #666666;">40 порций <br>
+                2 мыши в подарок</p>
+            
+        </div>
+        <div class="catphoto">
+            <img src="./Photo.png" >
+            <div class="catsircle" id="catsirlce2">
+                <p>2<br>
+                кг</p>
+            </div>
+            </div>
+        </div>
+        <div class="catfooter" id="catf2">
+            <p>Чего сидишь? Порадуй котэ,<a href="#">купи.</a></p>
+    </div>
+    
+        <div class="info_text" id="info-text2" style="display:none;">
+            <p>Вкусное лакомство для всех кошек !</p>
+        </div>
+    </div>
+
+<div> <div style="margin-right:18px ;">
+    <div class="cat1" id="cat3" style="filter: brightness(40%)">
+        <!-- <div class="hide3" id="hide3" style="background-color: grey;opacity: 0.8; display:none" > -->
+
+
+        <div class="catinfo" id="catinfo3">
+            <p style="color: #666666;padding-top: 10px;">Сказачное заморское яство</p>
+            <strong>
+                 <h1 style="margin: 0 auto;">Нямушка</h1>
+                 <h3 style="margin: 0 auto;">с фуа-гра</h3>
+                </strong>
+                 <p style="color: #666666;">100 порций <br>
+                5 мышей в подарок</p>
+            
+        </div>
+        <div class="catphoto" id="catp3">
+            <img src="./Photo.png">
+            <div class="catsircle" id="catsirlce3">
+                <p>5<br>
+                кг</p>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="catfooter" id="catf3">
+            <p>Чего сидишь? Порадуй котэ,<a href="#">купи.</a></p>
+        </div>
+    
+        <div class="info_text" id="info-text3" style="display:none;color: yellow;">
+            <p>К сожалению лакомство закончилось возьми другое!</p>
+        </div>
+    </div>
+</div>
+<div>
+    <script>
+
+        var flag = true;
+        $('#cat1').click(function() {
+            if (flag == true) {
+                $('#cat1').css("borderColor", 'red'); 
+                $('#catsirlce1').css("background-color", 'red');
+                $('#info-text1').slideToggle(300);
+                $('#catf1').hide();
+                flag = false;
+            }
+            else {
+                $('#cat1').css("border-color", '#55f'); 
+                $('#catsirlce1').css("background-color", '#1698D9');
+                $('#info-text1').hide();
+                $('#catf1').show();
+                
+                flag = true;
+            }
+        })
+
+     
+
+      
+        var flag = true;
+        $('#cat2').click(function() {
+            if (flag == true) {
+                $('#cat2').css("borderColor", 'red'); 
+                $('#catsirlce2').css("background-color", 'red');
+                $('#info-text2').slideToggle(300);
+                $('#catf2').hide();
+                flag = false;
+            }
+            else {
+                $('#cat2').css("border-color", '#55f'); 
+                $('#catsirlce2').css("background-color", '#1698D9');
+                $('#info-text2').hide();
+                $('#catf2').show();
+                
+                flag = true;
+            }
+        })
+
+        var flag = true;
+        $('#cat3').click(function() {
+            if (flag == true) {
+
+                
+
+
+
+
+                $('#catsirlce3').css("background-color", 'grey');
+                $('#info-text3').slideToggle(300);
+                $('#catf3').hide();
+                flag = false;
+            }
+            else {
+              
+             
+                
+                flag = true;
+            }
+        })
+      
+        
+            </script>
+          
+</body> 
+</html>
